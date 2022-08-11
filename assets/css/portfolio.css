@@ -1,0 +1,390 @@
+/**
+*   Death Star
+*/
+.death-star {
+  width: 65px;
+  height: 65px;
+}
+
+.death-star img:not(:first-child) {
+  position: absolute;
+}
+
+.ds-animation {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+
+#ds-charging {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  width: 20%;
+  right: 15%;
+  top: 22%;
+}
+
+#ds-firing {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-name: fadeBeam;
+          animation-name: fadeBeam;
+  width: 41%;
+  top: 21.5%;
+  right: -16%;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeBeam {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeBeam {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body {
+  margin: 0;
+}
+
+/**
+*   Navigation bar
+*/
+nav {
+  display: flex;
+  position: fixed;
+  right: 1rem;
+  top: 0.9rem;
+  z-index: 1;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:not(:last-child) {
+  border-right-width: thin;
+  padding-right: 5px;
+  border-right-style: solid;
+  border-right-color: white;
+}
+nav a:not(:first-child) {
+  border-left-width: thin;
+  padding-left: 5px;
+  border-left-style: solid;
+  border-left-color: #000;
+}
+
+/**
+*   About me section
+*/
+section#about-me {
+  height: 100vh;
+  background: url(../../images/background.jpg) center center/cover no-repeat #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+section#about-me h1 {
+  font-size: calc(2rem + 1.5vw);
+}
+section#about-me p {
+  font-size: 1.2rem;
+  font-style: italic;
+  text-align: center;
+  width: 80%;
+}
+section#about-me p span {
+  text-shadow: 0px 0px 22px black, 0px 0px 22px black, 0px 0px 22px black, 0px 0px 22px black, 0px 0px 22px black, 0px 0px 22px black, 0px 0px 1px black, 1px 1px black, 0px 0px 22px black, 0px 0px 1px black, 1px 1px black;
+}
+
+/**
+*   Project section
+*/
+section#projects {
+  background-color: rgb(14, 0, 0);
+}
+section#projects #fullpage {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-color: black;
+  cursor: zoom-out;
+}
+section#projects .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  max-width: 1480px;
+}
+@media screen and (min-width: 1551px) {
+  section#projects .gallery {
+    width: calc(100% - 6rem);
+  }
+}
+@media screen and (max-width: 1550px) {
+  section#projects .gallery {
+    width: calc(100% - 4rem);
+  }
+}
+@media screen and (max-width: 1199px) {
+  section#projects .gallery {
+    width: calc(100% - 6rem);
+  }
+}
+@media screen and (max-width: 900px) {
+  section#projects .gallery {
+    width: calc(100% - 4rem);
+  }
+}
+@media screen and (max-width: 750px) {
+  section#projects .gallery {
+    width: 100%;
+  }
+}
+section#projects .gallery article {
+  border: 1px solid;
+  padding: 1.5rem 2.5rem;
+  background-color: white;
+}
+@media screen and (max-width: 1399px) {
+  section#projects .gallery article {
+    padding: 1.5rem 1.5rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  section#projects .gallery article {
+    padding: 1.5rem 3rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  section#projects .gallery article {
+    padding: 1.5rem 2.5rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  section#projects .gallery article {
+    padding: 1.5rem;
+  }
+}
+section#projects .gallery h2 {
+  margin-bottom: 0px;
+}
+section#projects .gallery #intro {
+  position: relative;
+  width: 100%;
+  padding: 0.5rem 2.5rem;
+  border-bottom: 0px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+section#projects .gallery #intro h2,
+section#projects .gallery #intro p {
+  margin: 0;
+}
+section#projects .gallery #intro .background-figures {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+@media screen and (max-width: 749px) {
+  section#projects .gallery #intro .background-figures {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 456px) {
+  section#projects .gallery #intro .background-figures {
+    opacity: 0.5;
+  }
+}
+section#projects .gallery #outro {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-top: 0px;
+}
+section#projects .gallery .image {
+  margin: 1rem 0;
+  width: 100%;
+  overflow: hidden;
+}
+section#projects .gallery .short-description {
+  font-family: Montserrat, sans-serif;
+  font-size: 0.8em;
+}
+section#projects .gallery .longer-description {
+  font-size: 0.9em;
+}
+section#projects .gallery .longer-description p {
+  margin-bottom: 5px;
+}
+
+.carousel .carousel-indicators button {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 0.5px;
+}
+.carousel img:hover {
+  cursor: zoom-in;
+}
+.carousel .carousel-control-next-icon,
+.carousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath stroke='white' stroke-opacity='0.7'  d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.carousel .carousel-control-prev-icon {
+  transform: rotate(180deg);
+}
+
+#libraryCarousel .carousel-indicators {
+  margin-bottom: 2.5rem;
+}
+#libraryCarousel .carousel-control-prev,
+#libraryCarousel .carousel-control-next {
+  height: 60%;
+  margin: auto;
+}
+
+#studysmarter footer p {
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+.image-container .image-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+@media screen and (max-width: 370px) {
+  .image-container .image-caption {
+    left: 0;
+    right: 0;
+    padding-bottom: 0;
+    height: 90%;
+  }
+}
+
+/**
+*   Footer
+*/
+footer {
+  margin-top: 0.5rem;
+}
+footer a {
+  margin-right: 15px;
+  font-weight: 500;
+  font-size: 1.15rem;
+}
+footer .techs-used {
+  list-style: none;
+  padding-left: 0px;
+}
+footer .techs-used li {
+  display: inline;
+  padding-right: 5px;
+}
+footer .source-code {
+  text-shadow: 1px 1px 3px #000, 1px 1px 1px #000, 0px 1px 2px #000;
+  font-size: 1.5rem;
+  color: #acddff;
+  margin-top: -5px !important;
+}
+
+/**
+* general utilities
+**/
+.hover-blue:hover {
+  color: aqua;
+}
+
+.tiny {
+  font-size: 0.8em;
+}
+
+.text-outline {
+  text-shadow: 1px 1px 1px #000, 1px 0px 1px #000, 0px 0px 1px #000, 0px 1px 1px #000;
+}
+
+.text-background-shadow {
+  text-shadow: 0px 0px 22px black, 0px 0px 22px black, 0px 0px 22px black, 0px 0px 22px black, 0px 0px 22px black, 0px 0px 22px black, 0px 0px 1px black, 1px 1px black;
+}/*# sourceMappingURL=portfolio.css.map */

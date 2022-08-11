@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Simple portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<link rel="stylesheet" href="assets/css/portfolio.css" />
+
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body class="is-preload">
+
+	<!-- navigation bar -->
+	<nav>
+		<a href="#about-me" class="text-outline">About Me</a>
+		<a href="#projects" class="text-outline">Projects</a>
+		<a href="https://github.com/Pacy" class="text-outline" target="_blank">Github Link <i
+				class="fab fa-github text-outline"></i></a>
+	</nav>
+
+	<div class="main">
+
+		<!-- about me section -->
+		<section id="about-me">
+			<h1 class="text-background-shadow ">Christian Untch</h1>
+			<p>
+				<span>
+					I finished my computer science master at technical university munich.
+					<br />
+					I was always facinated by visual aspects and amazed by the magic one can achieve with code,
+					therefore I strive to do front end development to combine the visual and technical challenges.
+				</span>
+			</p>
+		</section>
+
+		<section id="projects">
+			<div id="fullpage" onclick="this.style.display='none';"></div>
+
+			<section class="gallery">
+				<article id="intro">
+					<h2>Projects</h2>
+					<p class="tiny fst-italic">Some selected front and back end projects I was involved in</p>
+
+					<section class="background-figures">
+						<!-- <div class="chess-pawn">
+							<div class="pawn-head"></div>
+							<div class="pawn-neck"></div>
+						    <div class="pawn-body"></div>
+						    <div class="pawn-transition-bottom"></div>
+						    <div class="pawn-bottom"></div>
+						</div> -->
+
+						<div class="death-star">
+							<img id="ds-initial" src="images/deathStar.svg"
+								alt="simplified image of the death star from star wars">
+							<img class="ds-animation" id="ds-charging" src="images/ds-charge.svg"
+								alt="image of death star charging weapon">
+							<img class="ds-animation" id="ds-firing" src="images/ds-beam.svg"
+								alt="image of death start firing his weapon">
+						</div>
+					</section>
+
+
+				</article>
+	
+				<!-- Library Project -->
+				<article class="col-xl-6" id="library">
+					<header>
+						<h2>Library</h2>
+						<p class="short-description fst-italic">A library web application
+							<span class="tiny"> [Ongoing project]</span>
+						</p>
+					</header>
+
+					<div id="libraryCarousel" class="carousel slide image fit enhanced" data-bs-interval="false">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#libraryCarousel" data-bs-slide-to="0" class="active"
+								aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#libraryCarousel" data-bs-slide-to="1"
+								aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#libraryCarousel" data-bs-slide-to="2"
+								aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#libraryCarousel" data-bs-slide-to="3"
+								aria-label="Slide 4"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<video controls class="w-100">
+									<source src="videos/library_project_screenrecord.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+							<div class="carousel-item">
+								<img src="images/library0.png" class="d-block w-100"
+									alt="picture of the library landing page">
+							</div>
+							<div class="carousel-item">
+								<img src="images/library1.png" class="d-block w-100" alt="picture of the search page">
+							</div>
+							<div class="carousel-item">
+								<img src="images/library2.png" class="d-block w-100"
+									alt="picture of the add medium page">
+							</div>
+						</div>
+						<div class="carousel-control">
+							<button class="carousel-control-prev" type="button" data-bs-target="#libraryCarousel"
+								data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#libraryCarousel"
+								data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>
+					</div>
+					<div class="longer-description">
+						<p>
+							This project is meant to handle the normal functionality of a library web application.
+							<br />
+							This includes:
+						</p>
+						<ul>
+							<li>A quick search</li>
+							<li>A complex search supporting AND, OR, NOT operator</li>
+							<li>Log in to reserve media, check currently borrowed media and return dates, update account
+								information</li>
+							<li>Let staff memeber add, edit and remove media & users</li>
+						</ul>
+					</div>
+
+					<footer>
+						<a href="https://github.com/Pacy/library" target="_blank" class="source-code hover-blue">Source
+							Code</a>
+						<ul class="tiny techs-used">
+							<li>Angular</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>TypeScript</li>
+							<li>JavaScript</li>
+							<li>MongoDB</li>
+							<li>Express</li>
+							<li>Node.js</li>
+							<li>Bootstrap</li>
+							<li>JUnit</li>
+						</ul>
+					</footer>
+				</article>
+
+				<!-- Portfolio Project -->
+				<article class="col-xl-6" id="portfolio">
+					<header>
+						<h2> Portfolio</h2>
+						<p class="short-description fst-italic">
+							Short collection of selected web application projects
+						</p>
+					</header>
+
+					<div class="image image-container">
+						<img src="images/background-about-me.png" class="d-block w-100" alt="image of the current site you are on">
+						<div class="image-caption">
+							<h3 class="text-background-shadow ">You are on it, have a look around ;)</h3>
+							<p class="text-background-shadow ">Did you spot the death star?</p>
+						</div>
+					</div>
+					<div class="longer-description">
+						<p>
+							The portfolio site shows you some of the previous project in regards to front and back end
+							development I was and currently am working on.
+						</p>
+						<p>
+							Most of these projects do not have a live site, therefore some screenshots were added to let
+							you get a visual impression of them.
+							<br />
+							Tech stack as well as the source code can be found at the bottom of each project tile, if
+							possible.
+						</p>
+					</div>
+
+					<footer>
+						<a href="https://github.com/Pacy/" target="_blank" class="source-code hover-blue">Source
+							Code</a>
+						<ul class="tiny techs-used">
+							<li>HTML</li>
+							<li>SCSS</li>
+							<li>JavaScript</li>
+							<li>Bootstrap</li>
+						</ul>
+					</footer>
+				</article>
+
+				<!-- Studysmarter Project -->
+				<article class="col-xl-6" id="studysmarter">
+					<header>
+						<h2>Studysmarter</h2>
+					</header>
+
+					<p class="short-description fst-italic">
+						Project at "Studysmarter" StartUp as part of the University program
+					</p>
+					<div class=" image image-container">
+						<img src="images/bg-img-filler.jpg" class="d-block w-100" alt="a placeholder image">
+						<div class="image-caption">
+							<h3 class="">No preview available</h3>
+							<p class="">No picture of the original version saved/found</p>
+						</div>
+					</div>
+
+					<div class="longer-description">
+						<p>
+							Responsible for creating and maintaining the front end part of the flashcard components
+							prior to and after the launch of the web application.
+						</p>
+						<p>
+							The flashcard component was pulling the users selected flashcards from the server to test
+							their knowledge and report their progress back.
+						</p>
+						<p>
+							The design of the component was according to ideas and feedback of the supervisor and own
+							implementation.
+							The flashcard was responsive based on the screen size and could include text as well as an
+							image in the question and answer part of it.
+							A transition animation, when a new card was shown, rounded up the user experience to
+							simulate
+							a new card being put on the stack of already answered ones.
+						</p>
+						<p> Futhermore, buttons to reflect the user's knowledge of the flashcard and a general opinion
+							of it could be sent to the server.
+						</p>
+							</div>
+							
+							<footer>
+						<p>Can't provide any code due to NDA</p>
+						<ul class="tiny techs-used">
+							<li>Angular</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>TypeScript</li>
+						</ul>
+					</footer>
+				</article>
+
+				<!-- MusicMe Project -->
+				<article class="col-xl-6" id="music-me">
+					<header>
+						<h2>Music Me</h2>
+						<p class="short-description fst-italic"> Platform to connect teacher and students to learn music
+							instrument (a four person university group project)
+						</p>
+					</header>
+
+					<div id="musicMeCarousel" class="carousel slide image fit" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#musicMeCarousel" data-bs-slide-to="0" class="active"
+								aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#musicMeCarousel" data-bs-slide-to="1"
+								aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#musicMeCarousel" data-bs-slide-to="2"
+								aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#musicMeCarousel" data-bs-slide-to="3"
+								aria-label="Slide 4"></button>
+							<button type="button" data-bs-target="#musicMeCarousel" data-bs-slide-to="4"
+								aria-label="Slide 5"></button>
+							<button type="button" data-bs-target="#musicMeCarousel" data-bs-slide-to="5"
+								aria-label="Slide 6"></button>
+							<button type="button" data-bs-target="#musicMeCarousel" data-bs-slide-to="6"
+								aria-label="Slide 7"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active ">
+								<img src="images/music-me1.png" class="d-block w-100" alt="landing page">
+							</div>
+							<div class="carousel-item">
+								<img src="images/music-me2.png" class="d-block w-100" alt="search page">
+							</div>
+							<div class="carousel-item">
+								<img src="images/music-me3.png" class="d-block w-100"
+									alt="page to confirm session booking">
+							</div>
+							<div class="carousel-item">
+								<img src="images/music-me4.png" class="d-block w-100" alt="booked lessons overview">
+							</div>
+							<div class="carousel-item">
+								<img src="images/music-me5.png" class="d-block w-100" alt="page to rate a teacher">
+							</div>
+							<div class="carousel-item">
+								<img src="images/music-me6.png" class="d-block w-100" alt="a new lesson being created">
+							</div>
+							<div class="carousel-item">
+								<img src="images/music-me7.png" class="d-block w-100" alt="mailbox">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#musicMeCarousel"
+							data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#musicMeCarousel"
+							data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+
+					<div class="longer-description">
+						<p>The project goal was to develop a business idea and implement the web application for it.
+							(First
+							contact with web application development for the whole team)
+							We decided on a platform to connect users with potential teachers specifically in regard to
+							music lessons.
+						</p>
+						<p>
+							There are no clear divisions for responsibilities & contributions in the development of the
+							application, as everyone was involved in the whole application and its improvement.
+							Therefore, it is hard to narrow down my own contribution to the whole project.
+							<br />
+							Contribution included:
+						<ul>
+							<li>Adjustments and fixes to the whole project</li>
+							<li>Creating and adding of a logo</li>
+							<li>Adding the message component</li>
+						</ul>
+						</p>
+					</div>
+
+					<footer>
+						<a href="https://github.com/SEBA-Team48/musicme-frontend/tree/develop/src/components"
+							target="_blank" class="source-code hover-blue">Frontend Source Code</a>
+						<a href="https://github.com/SEBA-Team48/musicme-backend" target="_blank"
+							class="source-code hover-blue">Backend Source Code</a>
+						<ul class="tiny techs-used">
+							<li>AngularJS</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+							<li>MongoDB</li>
+							<li>Express</li>
+							<li>Node.js</li>
+						</ul>
+					</footer>
+				</article>
+
+				<article id="outro">
+				</article>
+
+			</section>
+		</section>
+	</div>
+
+	<!-- script for bootstrap -->
+	<!-- necessary for carousel -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+		crossorigin="anonymous"></script>
+
+	<script src="assets/js/image-zoom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+/**
+*   Death Star
+*/
+
+$death-star-size: 65px;
+.death-star{
+//    text-align: -webkit-center;
+
+    width: $death-star-size ;
+    height: $death-star-size ;
+}
+
+.death-star img:not(:first-child) {
+    position: absolute;
+}
+
+.ds-animation {
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+#ds-charging {
+    animation-delay: -4s;
+    width: 20%;
+
+    // height: 10%;
+    // right: 2.37%;
+    // top: 11%;
+    right: 15%;
+    top: 22%;
+}
+
+#ds-firing {
+    animation-delay: -2s;
+    animation-name: fadeBeam;
+
+    width: 41%;
+    // top: 4.7%;
+    // right: -28%;
+    top: 21.5%;
+    right: -16%;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    43% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes fadeBeam {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

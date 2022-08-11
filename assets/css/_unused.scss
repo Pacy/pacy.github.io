@@ -1,0 +1,56 @@
+/**
+*   Chess figure
+*/
+$pawn-color: rgb(131, 80, 5);
+
+.chess-pawn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    transform:
+        scale(0.38) // desired height divided by 260px
+    ;
+}
+
+.pawn-head {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $pawn-color;
+
+}
+
+.pawn-neck {
+    background-color: $pawn-color;
+    width: 100px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.pawn-body {
+    background-color: $pawn-color;
+    // border-bottom: 200px solid $pawn-color;
+    // border-left: 25px solid transparent;
+    // border-right: 25px solid transparent;
+    height: 150px;
+    width: 100px;
+    margin-top: -4px;
+    clip-path: polygon(20% 0, 80% 0, 75% 20%, 77% 40%, 82% 80%, 90% 95%, 100% 100%, 0% 100%, 10% 95%, 18% 79%, 23% 40%, 25% 20%);
+}
+
+.pawn-transition-bottom {
+    background-color: $pawn-color;
+    width: 100px;
+    height: 10px;
+    // border-bottom-left-radius: 25%;
+    // border-bottom-right-radius: 25%;
+}
+
+.pawn-bottom {
+    background-color: $pawn-color;
+    width: 118px;
+    height: 19px;
+    border-radius: 25%;
+    margin-top: -5px;
+}

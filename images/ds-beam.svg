@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" viewBox="343.28 120.1 143.28 43.18">
+<desc>Created with Fabric.js 4.6.0</desc>
+<defs>
+</defs>
+<g transform="matrix(0.99 -0.14 0.14 0.99 414.92 141.69)" id="FnDxi--VnrlRCkv_3nr0Z">
+<filter id="SVGID_2" y="-45%" height="190%" x="-24%" width="148%">
+	<feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+	<feOffset dx="0" dy="0" result="oBlur"/>
+	<feFlood flood-color="rgb(0,159,0)" flood-opacity="1"/>
+	<feComposite in2="oBlur" operator="in"/>
+	<feMerge>
+		<feMergeNode/>
+		<feMergeNode in="SourceGraphic"/>
+	</feMerge>
+</filter>
+<path style="stroke: rgb(241,255,241); stroke-width: 4; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;filter: url(#SVGID_2);" vector-effect="non-scaling-stroke" transform=" translate(0, 0)" d="M -68.9215 10.03966 C -68.9215 10.03966 34.460750000000004 -5.019820000000001 68.92151 -10.03965" stroke-linecap="round"/>
+</g>
+</svg>
